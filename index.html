@@ -11,12 +11,12 @@
   <meta property="og:image" content="ページのサムネイルの画像">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:site_name" content="サイト名">
+  <meta property="og:site_name" content="SPACE EVERY">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="サイトの@Twitterのユーザー名">
-  <title>Base HTML</title>
+  <title>SPACE EVERY</title>
   <link rel="canonical" href="">
-  <link rel="icon" href="">
+  <link rel="icon" href="img/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="">
   <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
   <link rel="stylesheet" href="css/style.css">
@@ -29,9 +29,170 @@
 </head>
 <body>
   <header class="header">
-    
+    <div class="header__inner wrapper">
+      <div class="header__left">
+        <h1 class="site-title"><a href="index.html"><img src="img/logo.png" alt="SPACE EVERY"></a></h1>
+        <p class="site-text">オフィス街の貸会議室はスペースエブリー。</p>
+      </div>
+      <nav class="header__right nav">
+        <button id="menu-open" class="btn-menu"></button>
+        <div id="menu-panel">
+          <button id="menu-close" class="btn-menu"></button>
+          <ul>
+
+            <li>
+              <a href="room-a.html">
+                <img src="img/menu-room-a.png" alt="">
+                <h2>meeting room A</h2>
+              </a>
+            </li>
+            <li>
+              <a href="room-a.html">
+                <img src="img/menu-room-b.png" alt="">
+                <h2>meeting room B</h2>
+              </a>
+            </li>
+            <li>
+              <a href="room-a.html">
+                <img src="img/menu-room-c.png" alt="">
+                <h2>meeting room C</h2>
+              </a>
+            </li>
+            <li>
+              <a href="room-a.html">
+                <img src="img/menu-room-d.png" alt="">
+                <h2>meeting room D</h2>
+              </a>
+            </li>
+            <li>
+              <a href="room-a.html">
+                <img src="img/menu-room-e.png" alt="">
+                <h2>meeting room E</h2>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div></div>
+                <p>coming soon</p>
+                <h2>meeting room F</h2>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div></div>
+                <p>coming soon</p>
+                <h2>meeting room G</h2>
+              </a>
+            </li>
+            <li>
+              <a class="btn btn-toTop" href="#">topへ戻る</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
-  <main></main>
-  <footer class="footer"></footer>
+  <main>
+    <div class="mv wrapper">
+      <figure>
+        <picture>
+          <source media="(max-width:767px)" srcset="img/map-sp.png 1x, img/map-sp@2x.png 2x">
+          <source media="(min-width:768px)" srcset="img/map.png 1x, img/map@2x.png 2x">
+          <img src="img/map.png">
+        </picture>
+      </figure>
+      <div class="pin1 pin">
+        <img src="img/pin.png" alt="">
+        <div>
+          <h2>meeting room A</h2>
+          <a href="room-a.html">詳細を見る</a>
+        </div>
+      </div>
+      <div class="pin2 pin">
+        <img src="img/pin.png" alt="">
+        <div>
+          <h2>meeting room B</h2>
+          <a href="room-a.html">詳細を見る</a>
+        </div>
+      </div>
+      <div class="pin3 pin">
+        <img src="img/pin.png" alt="">
+        <div>
+          <h2>meeting room C</h2>
+          <a href="room-a.html">詳細を見る</a>
+        </div>
+      </div>
+      <div class="pin4 pin">
+        <img src="img/pin.png" alt="">
+        <div>
+          <h2>meeting room D</h2>
+          <a href="room-a.html">詳細を見る</a>
+        </div>
+      </div>
+      <div class="pin5 pin">
+        <img src="img/pin.png" alt="">
+        <div>
+          <h2>meeting room E</h2>
+          <a href="room-a.html">詳細を見る</a>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div>
+        <div><img src="img/logo.png" alt=""></div>
+        <ul class="link">
+          <li><a href="https://www.facebook.com/" target="_blank">f</a></li>
+          <li><a href="https://twitter.com/" target="_blank">t</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank">i</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="room-a.html">meeting room A</a>
+          </li>
+          <li>
+            <a href="room-a.html">meeting room B</a>
+          </li>
+          <li>
+            <a href="room-a.html">meeting room C</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="room-a.html">meeting room D</a>
+          </li>
+          <li>
+            <a href="room-a.html">meeting room E</a>
+          </li>
+          <li>
+            <a href="#">meeting room F</a>
+            <span>coming soon</span>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#">meeting room G</a>
+            <span>coming soon</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__inner wrapper">
+      <nav class="footer__nav">
+        <ul>
+          <li><a href="#">運営会社</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">特定商取引法に基づく表示</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">
+        <small>&copy;2023 Space Every All Rights Reserved.</small>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
