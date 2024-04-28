@@ -96,86 +96,88 @@
   </header>
   <main>
     <div class="mv wrapper">
-      <figure>
+      <figure class="mv__img">
         <picture>
           <source media="(max-width:767px)" srcset="img/map-sp.png 1x, img/map-sp@2x.png 2x">
           <source media="(min-width:768px)" srcset="img/map.png 1x, img/map@2x.png 2x">
           <img src="img/map.png">
         </picture>
       </figure>
-      <div class="pin1 pin">
-        <img src="img/pin.png" alt="">
-        <div>
-          <h2>meeting room A</h2>
-          <a href="room-a.html">詳細を見る</a>
+      <div class="pin1">
+        <img class="pin" src="img/pin.png" alt="">
+        <div class="pin__bubble">
+          <h2 class="pin__title">meeting room A</h2>
+          <a class="pin__link" href="room-a.html">詳細を見る</a>
         </div>
       </div>
-      <div class="pin2 pin">
-        <img src="img/pin.png" alt="">
-        <div>
-          <h2>meeting room B</h2>
-          <a href="room-a.html">詳細を見る</a>
+      <div class="pin2">
+        <img class="pin" src="img/pin.png" alt="">
+        <div class="pin__bubble">
+          <h2 class="pin__title">meeting room B</h2>
+          <a class="pin__link" href="room-a.html">詳細を見る</a>
         </div>
       </div>
-      <div class="pin3 pin">
-        <img src="img/pin.png" alt="">
-        <div>
-          <h2>meeting room C</h2>
-          <a href="room-a.html">詳細を見る</a>
+      <div class="pin3">
+        <img class="pin" src="img/pin.png" alt="">
+        <div class="pin__bubble">
+          <h2 class="pin__title">meeting room C</h2>
+          <a class="pin__link" href="room-a.html">詳細を見る</a>
         </div>
       </div>
-      <div class="pin4 pin">
-        <img src="img/pin.png" alt="">
-        <div>
-          <h2>meeting room D</h2>
-          <a href="room-a.html">詳細を見る</a>
+      <div class="pin4">
+        <img class="pin" src="img/pin.png" alt="">
+        <div class="pin__bubble">
+          <h2 class="pin__title">meeting room D</h2>
+          <a class="pin__link" href="room-a.html">詳細を見る</a>
         </div>
       </div>
-      <div class="pin5 pin">
-        <img src="img/pin.png" alt="">
-        <div>
-          <h2>meeting room E</h2>
-          <a href="room-a.html">詳細を見る</a>
+      <div class="pin5">
+        <img class="pin" src="img/pin.png" alt="">
+        <div class="pin__bubble">
+          <h2 class="pin__title">meeting room E</h2>
+          <a class="pin__link" href="room-a.html">詳細を見る</a>
         </div>
       </div>
     </div>
-    <div class="wrapper">
-      <div>
-        <div><img src="img/logo.png" alt=""></div>
-        <ul class="link">
+    <div class="guidance wrapper">
+      <div class="guidance__left">
+        <div class="guidance__logo">
+          <img src="img/logo.png" alt="">
+        </div>
+        <ul class="guidance__link-list">
           <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
           <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
         </ul>
       </div>
-      <div>
-        <ul>
+      <div class="guidance__right">
+        <ul class="guidance__room-list guidance__room-list1">
           <li>
-            <a href="room-a.html">meeting room A</a>
+            <a class="guidance__room-title" href="room-a.html">meeting room A</a>
           </li>
           <li>
-            <a href="room-a.html">meeting room B</a>
+            <a class="guidance__room-title" href="room-a.html">meeting room B</a>
           </li>
           <li>
-            <a href="room-a.html">meeting room C</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="room-a.html">meeting room D</a>
-          </li>
-          <li>
-            <a href="room-a.html">meeting room E</a>
-          </li>
-          <li>
-            <a href="#">meeting room F</a>
-            <span>coming soon</span>
+            <a class="guidance__room-title" href="room-a.html">meeting room C</a>
           </li>
         </ul>
-        <ul>
+        <ul class="guidance__room-list guidance__room-list2">
           <li>
-            <a href="#">meeting room G</a>
-            <span>coming soon</span>
+            <a class="guidance__room-title" href="room-a.html">meeting room D</a>
+          </li>
+          <li>
+            <a class="guidance__room-title" href="room-a.html">meeting room E</a>
+          </li>
+          <li>
+            <a class="guidance__room-title" href="#">meeting room F</a>
+            <span class="coming-soon2">coming soon</span>
+          </li>
+        </ul>
+        <ul class="guidance__room-list guidance__room-list3">
+          <li>
+            <a class="guidance__room-title" href="#">meeting room G</a>
+            <span class="coming-soon2">coming soon</span>
           </li>
         </ul>
       </div>
