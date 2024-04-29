@@ -108,16 +108,6 @@ li{
   transform: translateY(-6px) rotate(45deg);
 }
 
-/* .header__down{
-  height: 0;
-  opacity: 0;
-}
-
-.header__down--open {
-  opacity: 1;
-  height: auto;
-}  */
-
 .header__down {
   height: 0;
   opacity: 0;
@@ -416,4 +406,268 @@ li{
   margin-top: 20px;
   text-align: center;
   font-size: 0.75rem;
+}
+
+/* 
+
+room-a.html
+
+*/
+
+.breadcrumb{
+  margin-top: 150px;
+  display: flex;
+}
+
+.breadcrumb li a{
+  text-transform: capitalize;
+  font-size: 0.875rem;
+  
+}
+
+.room-container{
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+}
+
+/* ROOM-TOP */
+
+.room-top__title{
+  font-weight: bold;
+  font-size: 1.625rem;
+}
+
+.room-top__list{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-top__big-img{
+  width: 73.5%;
+}
+
+.room-top__small-img{
+  width: 24.5%;
+}
+
+.room-top__small-img ul li{
+  margin-bottom: 20px;
+}
+
+.room-top__small-img ul li:last-of-type{
+  margin-bottom: 0;
+}
+
+/* ROOM-FEATURE */
+
+.room-feature{
+  margin-top: 60px;
+}
+
+.room-sectionTitle{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.room-feature__list{
+  margin-top: 15px;
+}
+
+.room-feature__list li{
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+/* ROOM-FACILITY */
+
+.room-facility{
+  margin-top: 65px;
+}
+
+.room-facility__list{
+  margin-top: 25px;
+  display: flex;
+}
+
+.room-facility__list li{
+  margin-right: 10px;
+  padding: 5px 10px;
+  outline: 1px solid #ccc;
+}
+
+.room-facility__list li:last-of-type{
+  margin-right: 0;
+}
+
+/* RESERVATION-BOX */
+
+.reservation-box{
+  margin-top: 70px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+
+/* ROOM-PLAN */
+
+.reservation-box__title{
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding-left: 15px;
+  border-left: 3px solid #222;
+}
+
+.room-plan__list{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-plan__list li{
+  width: 30.85%;
+  outline: solid 2px #ccc;
+  border-radius: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: .3s;
+}
+
+.room-plan__list li:hover{
+  outline: solid 2px #21A0E1;
+}
+
+.room-plan__title{
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.room-plan__price{
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1.75rem;
+}
+
+.room-plan__description{
+  margin-top: 25px;
+  font-size: 0.875rem;
+}
+
+.room-plan__time{
+  margin-top: 30px;
+  font-size: 0.875rem;
+}
+
+/* ROOM-DATE */
+
+.room-date{
+  margin-top: 60px;
+}
+
+.room-date__box{
+  margin-top: 30px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* ROOM-TIME */
+
+.room-time{
+  margin-top: 60px;
+}
+
+.room-time__box{
+  margin-top: 30px;
+}
+
+.room-time__box input{
+  width: 300px;
+  border: 1px solid #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.room-time__box input:first-of-type{
+  margin-left: 0;
+}
+
+
+/* ROOM-OPTION */
+
+.room-option{
+  margin-top: 60px;
+}
+
+.room-option__list{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-option__list li{
+  outline: solid 2px #ccc;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  transition: .3s;
+}
+
+.room-option__list li:hover{
+  outline: solid 2px #21A0E1;
+}
+
+.room-option__title{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: bold;
+}
+
+.room-option__text{
+  margin-top: 5px;
+  text-align: center;
+  font-size: 0.9375rem;
+}
+
+.submit-btn{
+  margin: 0 auto;
+  margin-top: 60px;
+  display: block;
+  width: 400px;
+  color: #fff;
+  background-color: #21A0E1;
+  outline: 2px solid #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 17px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.submit-btn:hover{
+  color: #21A0E1;
+  background-color: #fff;
+  outline: 2px solid #21A0E1;
 }

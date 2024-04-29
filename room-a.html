@@ -30,71 +30,73 @@
 <body>
   <header class="header">
     <div class="header__inner wrapper">
-      <div class="header__left">
+      <div class="header__top">
         <h1 class="site-title"><a href="index.html"><img src="img/logo.png" alt="SPACE EVERY"></a></h1>
         <p class="site-text">オフィス街の貸会議室はスペースエブリー。</p>
-      </div>
-      <nav class="header__right nav">
-        <button id="menu-open" class="btn-menu"></button>
-        <div id="menu-panel">
-          <button id="menu-close" class="btn-menu"></button>
-          <ul>
-
-            <li>
-              <a href="room-a.html">
-                <img src="img/menu-room-a.png" alt="">
-                <h2>meeting room A</h2>
-              </a>
-            </li>
-            <li>
-              <a href="room-a.html">
-                <img src="img/menu-room-b.png" alt="">
-                <h2>meeting room B</h2>
-              </a>
-            </li>
-            <li>
-              <a href="room-a.html">
-                <img src="img/menu-room-c.png" alt="">
-                <h2>meeting room C</h2>
-              </a>
-            </li>
-            <li>
-              <a href="room-a.html">
-                <img src="img/menu-room-d.png" alt="">
-                <h2>meeting room D</h2>
-              </a>
-            </li>
-            <li>
-              <a href="room-a.html">
-                <img src="img/menu-room-e.png" alt="">
-                <h2>meeting room E</h2>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div></div>
-                <p>coming soon</p>
-                <h2>meeting room F</h2>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <div></div>
-                <p>coming soon</p>
-                <h2>meeting room G</h2>
-              </a>
-            </li>
-            <li>
-              <a class="btn btn-toTop" href="#">topへ戻る</a>
-            </li>
-          </ul>
+        <div class="header__top__right header__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      </nav>
+      </div>
+      <div class="header__down">
+        <ul>
+          <li class="menu-room">
+            <a href="room-a.html">
+              <img class="menu-room__img" src="img/menu-room-a.png" alt="">
+              <h2 class="menu-room__title">meeting room A</h2>
+            </a>
+          </li>
+          <li class="menu-room">
+            <a href="room-a.html">
+              <img class="menu-room__img" src="img/menu-room-b.png" alt="">
+              <h2 class="menu-room__title">meeting room B</h2>
+            </a>
+          </li>
+          <li class="menu-room">
+            <a href="room-a.html">
+              <img class="menu-room__img" src="img/menu-room-c.png" alt="">
+              <h2 class="menu-room__title">meeting room C</h2>
+            </a>
+          </li>
+          <li class="menu-room">
+            <a href="room-a.html">
+              <img class="menu-room__img" src="img/menu-room-d.png" alt="">
+              <h2 class="menu-room__title">meeting room D</h2>
+            </a>
+          </li>
+          <li class="menu-room">
+            <a href="room-a.html">
+              <img class="menu-room__img" src="img/menu-room-e.png" alt="">
+              <h2 class="menu-room__title">meeting room E</h2>
+            </a>
+          </li>
+          <li class="menu-room">
+            <a href="#">
+              <div class="menu-room__noImg">
+                <p class="coming-soon">coming soon</p>
+              </div>
+              <h2 class="menu-room__title">meeting room F</h2>
+            </a>
+          </li>
+          <li class="menu-room">
+            <a href="#">
+              <div class="menu-room__noImg">
+                <p class="coming-soon">coming soon</p>
+              </div>
+              <h2 class="menu-room__title">meeting room G</h2>
+            </a>
+          </li>
+          <li>
+            <a class="btn btn-toTop" href="#">topへ戻る</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <ul class="breadcrumb wrapper">
     <li><a href="index.html">トップ</a></li>
-    <li><a href="#" class="current">meeting room A</a></li>
+    <li><a href="#" class="current">&nbsp;/&nbsp;meeting room A</a></li>
   </ul>
   <main>
     <div class="room-container wrapper">
@@ -141,103 +143,109 @@
           <h3 class="reservation-box__title">料金プランを選択</h3>
           <ul class="room-plan__list">
             <li>
-              <h4>基本プラン</h4>
-              <p>999円/1h</p>
-              <p>利用時間を自分で選択できる、基本のプランです。</p>
-              <p>利用時間：自由に選択いただけます。</p>
+              <h4 class="room-plan__title">基本プラン</h4>
+              <p class="room-plan__price">999円/1h</p>
+              <p class="room-plan__description">利用時間を自分で選択できる、基本のプランです。</p>
+              <p class="room-plan__time">利用時間：自由に選択いただけます。</p>
             </li>
             <li>
-              <h4>終日プラン</h4>
-              <p>9999円/1日</p>
-              <p>終日利用できるプランです。1hあたりの料金が基本プランよりもお得です。</p>
-              <p>利用時間:9時～19時</p>
+              <h4 class="room-plan__title">終日プラン</h4>
+              <p class="room-plan__price">9999円/1日</p>
+              <p class="room-plan__description">終日利用できるプランです。1hあたりの料金が基本プランよりもお得です。</p>
+              <p class="room-plan__time">利用時間:9時～19時</p>
             </li>
             <li>
-              <h4>早朝プラン</h4>
-              <p>9999円/2h</p>
-              <p>早朝に安く使用できるプランです。<br>（※2時間固定となります。）</p>
-              <p>利用時間:7時～9時</p>
+              <h4 class="room-plan__title">早朝プラン</h4>
+              <p class="room-plan__price">9999円/2h</p>
+              <p class="room-plan__description">早朝に安く使用できるプランです。<br>（※2時間固定となります。）</p>
+              <p class="room-plan__time">利用時間:7時～9時</p>
             </li>
           </ul>
         </section>
         <section class="room-date">
           <h3 class="reservation-box__title">日付を選択</h3>
-          <div><input type="date"></div>
+          <div class="room-date__box"><input type="date"></div>
         </section>
         <section class="room-time">
           <h3 class="reservation-box__title">時間を選択</h3>
-          <div><input type="time"></div>
+          <div class="room-time__box">
+            <input type="time">
+            ～
+            <input type="time">
+          </div>
         </section>
         <section class="room-option">
           <h3 class="reservation-box__title">オプションを選択</h3>
           <ul class="room-option__list">
             <li>
               <img src="img/room-option-1.png" alt="">
-              <h4>プロジェクター</h4>
-              <p>価格:9,999円</p>
+              <h4 class="room-option__title">プロジェクター</h4>
+              <p class="room-option__text">価格&nbsp;:&nbsp;9,999円</p>
             </li>
             <li>
               <img src="img/room-option-2.png" alt="">
-              <h4>ホワイトボード</h4>
-              <p>価格:9,999円</p>
+              <h4 class="room-option__title">ホワイトボード</h4>
+              <p class="room-option__text">価格&nbsp;:&nbsp;9,999円</p>
             </li>
             <li>
               <img src="img/room-option-3.png" alt="">
-              <h4>ワイヤレスマイク</h4>
-              <p>価格:9,999円</p>
+              <h4 class="room-option__title">ワイヤレスマイク</h4>
+              <p class="room-option__text">価格&nbsp;:&nbsp;9,999円</p>
             </li>
             <li>
               <img src="img/room-option-4.png" alt="">
-              <h4>ノートPC</h4>
-              <p>価格:9,999円</p>
+              <h4 class="room-option__title">ノートPC</h4>
+              <p class="room-option__text">価格&nbsp;:&nbsp;9,999円</p>
             </li>
             <li>
               <img src="img/room-option-5.png" alt="">
-              <h4>液晶ディスプレイ</h4>
-              <p>価格:9,999円</p>
+              <h4 class="room-option__title">液晶ディスプレイ</h4>
+              <p class="room-option__text">価格&nbsp;:&nbsp;9,999円</p>
             </li>
           </ul>
         </section>
-        <a href="#">予約画面へ</a>
+        <a class="submit-btn" href="#">予約画面へ</a>
       </div>
     </div>
-    <div class="wrapper">
-      <div>
-        <div><img src="img/logo.png" alt=""></div>
-        <ul class="link">
+    <div class="guidance wrapper">
+      <div class="guidance__left">
+        <div class="guidance__logo">
+          <img src="img/logo.png" alt="">
+        </div>
+        <ul class="guidance__link-list">
           <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
           <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
           <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
         </ul>
       </div>
-      <div>
-        <ul>
+      <div class="guidance__right">
+        <ul class="guidance__room-list guidance__room-list1">
           <li>
-            <a href="room-a.html">meeting room A</a>
+            <a class="guidance__room-title" href="room-a.html">meeting room A</a>
           </li>
           <li>
-            <a href="room-a.html">meeting room B</a>
+            <a class="guidance__room-title" href="room-a.html">meeting room B</a>
           </li>
           <li>
-            <a href="room-a.html">meeting room C</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="room-a.html">meeting room D</a>
-          </li>
-          <li>
-            <a href="room-a.html">meeting room E</a>
-          </li>
-          <li>
-            <a href="#">meeting room F</a>
-            <span>coming soon</span>
+            <a class="guidance__room-title" href="room-a.html">meeting room C</a>
           </li>
         </ul>
-        <ul>
+        <ul class="guidance__room-list guidance__room-list2">
           <li>
-            <a href="#">meeting room G</a>
-            <span>coming soon</span>
+            <a class="guidance__room-title" href="room-a.html">meeting room D</a>
+          </li>
+          <li>
+            <a class="guidance__room-title" href="room-a.html">meeting room E</a>
+          </li>
+          <li>
+            <a class="guidance__room-title" href="#">meeting room F</a>
+            <span class="coming-soon2">coming soon</span>
+          </li>
+        </ul>
+        <ul class="guidance__room-list guidance__room-list3">
+          <li>
+            <a class="guidance__room-title" href="#">meeting room G</a>
+            <span class="coming-soon2">coming soon</span>
           </li>
         </ul>
       </div>
