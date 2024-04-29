@@ -1,14 +1,8 @@
-// document.querySelector(".header__hamburger").addEventListener("click", function() {
-//   this.classList.toggle('active');
-// });
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburger = document.querySelector('.header__hamburger');
+  const headerDown = document.querySelector('.header__down');
 
-
-// $(".header__hamburger").click(function () {//ボタンがクリックされたら
-//     $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
-//     $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
-// });
-
-// $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
-//     $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
-//     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
-// });
+  hamburger.addEventListener('click', function() {
+    headerDown.classList.toggle('header__down--open');
+  });
+});

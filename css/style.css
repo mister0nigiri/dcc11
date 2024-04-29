@@ -108,12 +108,31 @@ li{
   transform: translateY(-6px) rotate(45deg);
 }
 
-.header__down{
-  display: none;
+/* .header__down{
+  height: 0;
+  opacity: 0;
 }
 
+.header__down--open {
+  opacity: 1;
+  height: auto;
+}  */
+
+.header__down {
+  height: 0;
+  opacity: 0;
+  overflow: hidden; 
+  transition: opacity 1.2s ease; 
+}
+
+.header__down--open {
+  opacity: 1;
+  height: auto;
+}
+
+
 .header__down ul{
-  margin-top: 40px;
+  padding-top: 40px;
   padding-bottom: 30px;
   display: flex;
   justify-content: space-between;
@@ -173,7 +192,7 @@ li{
   padding-left: 10px;
   border-radius: 100px;
   position: relative;
-  transition: .3;
+  transition: .3s;
 }
 
 .btn-toTop:hover{
