@@ -6,3 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     headerDown.classList.toggle('header__down--open');
   });
 });
+
+document.querySelector(".header__hamburger").addEventListener("click", function() {
+  this.classList.toggle('active');
+});
+  

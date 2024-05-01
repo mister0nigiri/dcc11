@@ -37,7 +37,6 @@ li{
 /* HEADER */
 
 .header__inner{
-  margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 40px;
@@ -52,12 +51,6 @@ li{
   transform: translateX(-50%);
   box-shadow: 5px 5px 10px rgba(166, 171, 189, 0.3);
 }
-
-/* .header__top{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
 
 .header__hamburger{
   background-color: #fff;
@@ -119,7 +112,6 @@ li{
   opacity: 1;
   height: auto;
 }
-
 
 .header__down ul{
   padding-top: 40px;
@@ -186,7 +178,7 @@ li{
 }
 
 .btn-toTop:hover{
-  transform: scale(1.1);
+  opacity: .7;
 }
 
 .btn-toTop::before { 
@@ -217,8 +209,6 @@ li{
 }
 
 
-
-
 /* MV */
 
 .mv{
@@ -227,6 +217,7 @@ li{
 }
 
 .mv__img img{
+  border-radius: 20px;
   height: 550px;
 }
 
@@ -670,4 +661,221 @@ room-a.html
   color: #21A0E1;
   background-color: #fff;
   outline: 2px solid #21A0E1;
+}
+
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 768px) {
+
+  /* HEADER */
+
+  .header__inner{
+    width: 93%;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 15px;
+  }
+
+  .site-title{
+    width: fit-content;
+  }
+
+  .site-title a img{
+    height: 30px;
+    vertical-align: middle;
+  }
+
+  .site-text{
+    font-size: 0.625rem;
+  }
+
+  .header__hamburger{
+    width: 35px;
+    height: 22px;
+    top: 23px;
+    right: 15px;
+  }
+
+  .header__hamburger span{
+    width: 35px;
+  }
+
+  .header__hamburger span:nth-of-type(2) {
+    top: 11px;
+  }
+  .header__hamburger span:nth-of-type(3) {
+    top: 22px;
+  }
+
+  .header__hamburger.active span:nth-of-type(1) {
+    top: 6px;
+    transform: translateY(6px) rotate(-45deg);
+  }
+
+  .header__hamburger.active span:nth-of-type(3){
+    top: 18px;
+    transform: translateY(-6px) rotate(45deg);
+  }
+
+  .header__down ul{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .header__down ul li{
+    width: 20%;
+  }
+
+  .menu-room__img{
+    height: 80px;
+  }
+
+  .menu-room__title{
+    font-size: 0.875rem;
+    margin-top: 5px;
+    padding-left: 5px;
+  }
+
+  .menu-room__noImg{
+    height: 80px;
+    padding-left: 10px;
+  }
+
+  .coming-soon{
+    font-size: 0.875rem;
+  }
+
+  .btn-toTop{
+    margin-top: 30px;
+    font-size: 0.5rem;
+    border: 2px solid currentColor;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+  }
+
+  .btn-toTop::before { 
+    display: none;
+  }
+  
+  .btn-toTop::after {
+    display: none;
+  }
+
+  /* MV */
+
+  .mv{
+    margin-top: 110px;
+  }
+
+  .mv__img{
+    text-align: center;
+  }
+
+  .mv__img img{
+    height: 248px;
+  }
+
+  .pin{
+    width: 20px;
+    height: 28px;
+  }
+
+  .pin1{
+    position: absolute;
+    top: 28px;
+    left: 30px;
+  }
+
+  .pin2{
+    position: absolute;
+    top: 154px;
+    left: 83px;
+  }
+
+  .pin3{
+    position: absolute;
+    top: 66px;
+    right: 170px;
+  }
+
+  .pin4{
+    position: absolute;
+    top: 190px;
+    right: 115px;
+  }
+
+  .pin5{
+    position: absolute;
+    top: 95px;
+    right: 35px;
+  }
+
+  .pin__bubble{
+    width: 80px;
+    top: 30px;
+    left: -28px;
+  }
+
+  .pin__title{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 0.875rem;
+  }
+
+  /* GUIDANCE */
+
+  .guidance{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 60px;
+  }
+
+  .guidance__logo img{
+    width: 200px;
+    height: 31px;
+  }
+
+  .guidance__right{
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .guidance__room-list1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 0px;
+  }
+
+  .guidance__room-list2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 0px;
+  }
+
+  /* FOOTER */
+
+  .footer__nav ul{
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .copyright{
+    margin-top: 25px;
+  }
+
 }
