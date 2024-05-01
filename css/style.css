@@ -878,4 +878,179 @@ SP
     margin-top: 25px;
   }
 
+
+  /* 
+
+  room-a.html
+
+  */
+
+  .breadcrumb{
+    margin-top: 100px;
+  }
+
+  .room-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  /* ROOM-TOP */
+
+  .room-top__title{
+    font-size: 1.25rem;
+  }
+
+  .room-top__list{
+    flex-direction: column;
+  }
+
+  .room-top__big-img{
+    width: 100%;
+  }
+
+  .room-top__small-img{
+    width: 100%;
+  }
+
+  .room-top__small-img ul li{
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  /* ROOM-FEATURE */
+
+  .room-feature{
+    margin-top: 40px;
+  }
+
+  .room-sectionTitle{
+    font-size: 1.125rem;
+  }
+
+  /* ROOM-FACILITY */
+
+  .room-facility{
+    margin-top: 40px;
+  }
+
+  .room-facility__list{
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .room-facility__list li{
+    margin-right: 0px;
+  }
+
+  /* RESERVATION-BOX */
+
+  .reservation-box{
+    margin-top: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: none;
+  }
+
+
+  /* ROOM-PLAN */
+
+  .reservation-box__title{
+    font-size: 1.125rem;
+  }
+
+  .room-plan__list{
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .room-plan__list li{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .room-plan__price{
+    margin-top: 10px;
+  }
+
+  .room-plan__description{
+    margin-top: 10px;
+  }
+
+  .room-plan__time{
+    margin-top: 10px;
+  }
+
+  /* ROOM-DATE */
+
+  .room-date{
+    margin-top: 40px;
+  }
+
+  .room-date__box{
+    margin-top: 15px;
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* ROOM-TIME */
+
+  .room-time{
+    margin-top: 40px;
+  }
+
+  .room-time__box{
+    margin-top: 15px;
+  }
+
+  .room-time__box input{
+    width: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* ROOM-OPTION */
+
+  .room-option{
+    margin-top: 40px;
+  }
+
+  .room-option__list{
+    margin-top: 15px;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .room-option__list li{
+    width: 46%;
+    text-align: center;
+  }
+
+  .room-option__title{
+    margin-top: 10px;
+    font-size: 0.875rem;
+  }
+
+  .room-option__text{
+    font-size: 0.875rem;
+  }
+
+  .submit-btn{
+    margin-top: 40px;
+    width: 100%;
+  }
 }
