@@ -37,6 +37,7 @@ li{
 /* HEADER */
 
 .header__inner{
+  opacity: 0;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 40px;
@@ -47,8 +48,8 @@ li{
   position: fixed;
   z-index: 5;
   top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 50% ;
+  transform: translateX(-50%) !important;
   box-shadow: 5px 5px 10px rgba(166, 171, 189, 0.3);
 }
 
@@ -224,6 +225,22 @@ li{
 .pin{
   width: 37px;
   height: 52px;
+  animation: yurayura 2s linear infinite;
+}
+
+.pin-box{
+  padding: 5px;
+}
+
+@keyframes yurayura {
+  0% , 100%{
+      /* transform: rotate(10deg); */
+      transform: translateY(5px);
+  }
+  50%{
+      /* transform: rotate(-10deg); */
+      transform: translateY(-5px);
+  }
 }
 
 .pin1{
@@ -263,7 +280,7 @@ li{
   position: absolute;
   top: 55px;
   left: -80px;
-  opacity: 0;
+  display: none;
 }
 
 .pin__title{
@@ -272,6 +289,8 @@ li{
   padding-left: 25px;
   padding-right: 25px;
   background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   font-size: 1.125rem;
   font-weight: bold;
   text-transform: capitalize;
@@ -290,9 +309,27 @@ li{
   border-bottom-right-radius: 10px;
 }
 
+/* キーフレームの定義 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* アニメーションの適用 */
+.pin__bubble {
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+
 /* GUIDANCE */
 
 .guidance{
+  opacity: 0;
   margin-top: 40px;
   background-color: #fff;
   border-radius: 20px;
@@ -363,6 +400,7 @@ li{
   position: absolute;
   top: 0;
   left: 0;
+  box-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
 }
 
 /* FOOTER */
