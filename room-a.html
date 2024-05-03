@@ -29,7 +29,7 @@
 </head>
 <body>
   <header class="header">
-    <div class="header__inner wrapper">
+    <div class="header__inner wrapper fadeInDown">
       <div class="header__top">
         <h1 class="site-title"><a href="index.html"><img src="img/logo.png" alt="SPACE EVERY"></a></h1>
         <p class="site-text">オフィス街の貸会議室はスペースエブリー。</p>
@@ -140,7 +140,7 @@
       </section>
       <div class="reservation-box">
         <section class="room-plan">
-          <h3 class="reservation-box__title">料金プランを選択</h3>
+          <h3 class="reservation-box__title">料金プランを選択&nbsp;<span class="asterisk">*</span></h3>
           <ul class="room-plan__list">
             <li>
               <h4 class="room-plan__title">基本プラン</h4>
@@ -163,15 +163,19 @@
           </ul>
         </section>
         <section class="room-date">
-          <h3 class="reservation-box__title">日付を選択</h3>
+          <h3 class="reservation-box__title">日付を選択&nbsp;<span class="asterisk">*</span></h3>
           <div class="room-date__box"><input type="date"></div>
         </section>
         <section class="room-time">
-          <h3 class="reservation-box__title">時間を選択</h3>
+          <h3 class="reservation-box__title">時間を選択&nbsp;<span class="asterisk">*</span></h3>
           <div class="room-time__box">
-            <input type="time">
+            <div class="morning">
+              <input type="time" class="morning">
+            </div>
             ～
-            <input type="time">
+            <div class="afternoon">
+              <input type="time" class="afternoon">
+            </div>
           </div>
         </section>
         <section class="room-option">
@@ -207,7 +211,7 @@
         <a class="submit-btn" href="#">予約画面へ</a>
       </div>
     </div>
-    <div class="guidance wrapper">
+    <div class="guidance wrapper fadeInUp">
       <div class="guidance__left">
         <div class="guidance__logo">
           <img src="img/logo.png" alt="">

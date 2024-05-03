@@ -557,6 +557,11 @@ room-a.html
   border-left: 3px solid #222;
 }
 
+.asterisk{
+  color: #FF0000;
+  font-size: 1.25rem;
+}
+
 .room-plan__list{
   margin-top: 30px;
   display: flex;
@@ -634,12 +639,38 @@ room-a.html
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.morning{
+  display: inline-block;
+  position: relative;
   margin-right: 15px;
+}
+
+.morning::before{
+  content: "開始 :";
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  color: #222;
+  font-size: 0.875rem;
+}
+
+.afternoon{
+  display: inline-block;
+  position: relative;
   margin-left: 15px;
 }
 
-.room-time__box input:first-of-type{
-  margin-left: 0;
+.afternoon::before{
+  content: "終了 :";
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 15px;
+  color: #222;
+  font-size: 0.875rem;
 }
 
 
