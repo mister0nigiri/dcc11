@@ -140,7 +140,7 @@
       </section>
       <div class="reservation-box">
         <section class="room-plan">
-          <h3 class="reservation-box__title">料金プランを選択</h3>
+          <h3 class="reservation-box__title">料金プランを選択&nbsp;<span class="asterisk">*</span></h3>
           <ul class="room-plan__list">
             <li>
               <h4 class="room-plan__title">基本プラン</h4>
@@ -163,15 +163,19 @@
           </ul>
         </section>
         <section class="room-date">
-          <h3 class="reservation-box__title">日付を選択</h3>
+          <h3 class="reservation-box__title">日付を選択&nbsp;<span class="asterisk">*</span></h3>
           <div class="room-date__box"><input type="date"></div>
         </section>
         <section class="room-time">
-          <h3 class="reservation-box__title">時間を選択</h3>
+          <h3 class="reservation-box__title">時間を選択&nbsp;<span class="asterisk">*</span></h3>
           <div class="room-time__box">
-            <input type="time">
+            <div class="morning">
+              <input type="time" class="morning">
+            </div>
             ～
-            <input type="time">
+            <div class="afternoon">
+              <input type="time" class="afternoon">
+            </div>
           </div>
         </section>
         <section class="room-option">
