@@ -510,8 +510,15 @@ room-a.html
 }
 
 .room-feature__list li{
+  margin-bottom: 5px;
+  padding-left: 1em;
+  text-indent: -1em;
   list-style-type: disc;
   list-style-position: inside;
+}
+
+.room-feature__list li:last-of-type{
+  margin-bottom: 0;
 }
 
 /* ROOM-FACILITY */
@@ -528,6 +535,7 @@ room-a.html
 .room-facility__list li{
   margin-right: 10px;
   padding: 5px 10px;
+  text-align: center;
   outline: 1px solid #ccc;
 }
 
@@ -626,10 +634,11 @@ room-a.html
 
 .room-time{
   margin-top: 60px;
+  min-width: 360px;
 }
 
 .room-time__box{
-  margin-top: 30px;
+  margin-top: 47px;
 }
 
 .room-time__box input{
@@ -644,7 +653,7 @@ room-a.html
 .morning{
   display: inline-block;
   position: relative;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .morning::before{
@@ -660,7 +669,7 @@ room-a.html
 .afternoon{
   display: inline-block;
   position: relative;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .afternoon::before{
@@ -668,7 +677,7 @@ room-a.html
   display: block;
   position: absolute;
   top: -20px;
-  left: 15px;
+  left: 0;
   color: #222;
   font-size: 0.875rem;
 }
@@ -742,7 +751,7 @@ SP
 
   .header__inner{
     width: 93%;
-    padding-top: 0px;
+    padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
@@ -1081,7 +1090,7 @@ SP
   }
 
   .room-time__box{
-    margin-top: 15px;
+    margin-top: 33px;
   }
 
   .room-time__box input{
