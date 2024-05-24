@@ -482,6 +482,11 @@ room-a.html
   width: 73.5%;
 }
 
+.room-top__big-img img{
+  height: 100%;
+  border-radius: 10px;
+}
+
 .room-top__small-img{
   width: 24.5%;
 }
@@ -634,7 +639,6 @@ room-a.html
 
 .room-time{
   margin-top: 60px;
-  min-width: 360px;
 }
 
 .room-time__box{
@@ -998,6 +1002,11 @@ SP
     text-align: center;
     margin-bottom: 0px;
     margin-top: 20px;
+  }
+
+  .room-top__small-img ul li img{
+    width: 100%;
+    height: 100%;
   }
 
   /* ROOM-FEATURE */
